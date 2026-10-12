@@ -1,0 +1,116 @@
+/* Mobile readability fixes. Desktop archive and case-study composition are unchanged. */
+@media(max-width:850px){
+  .case-nav{gap:8px 18px;justify-content:flex-start}
+  .case-nav a{display:inline-flex;align-items:center;min-width:44px;min-height:44px;font-size:13px;padding:8px 4px}
+  .case-content p,.case-summary{font-size:16px}
+  .case-meta dd{font-size:13px}
+  .case-meta dt,.case-category{font-size:11px}
+  .case-figure figcaption,.phone-gallery .case-figure figcaption{font-size:12px;line-height:1.8}
+  .case-figure figcaption>span{font-size:11px}
+  .dialog-close{min-width:64px;min-height:44px;font-size:13px}
+}
+@media(max-width:600px){
+  :root{--gutter:20px}
+  html{scroll-padding-top:90px}
+  .shell{min-width:0}
+  .nav-inner{height:72px;gap:10px}
+  .wordmark{font-size:28px;min-height:44px;display:inline-flex;align-items:center;flex-shrink:0}
+  .nav-inner nav{gap:8px;font-size:12px}
+  .nav-inner nav a{display:inline-flex;justify-content:center;align-items:center;gap:3px;min-width:44px;min-height:44px;padding:8px 3px}
+  .nav-count{font-size:9px;margin:0}
+  .archive-eyebrow{font-size:10px;letter-spacing:.3px;flex-wrap:wrap;gap:5px 15px}
+  .archive-hero-bottom p{font-size:16px;line-height:1.85}
+  .archive-bar{flex-wrap:wrap;gap:8px;padding:19px 0}
+  .archive-bar h2{font-size:14px}
+  .archive-bar h2 span{font-size:12px}
+  .archive-touch-hint{font-size:11px;letter-spacing:0}
+  .archive-grid{gap:42px}
+  .archive-picture{aspect-ratio:auto;padding:16px;overflow:visible}
+  .archive-picture>img{width:100%;height:auto;max-height:none;object-fit:contain;transform:none!important}
+  .archive-phones{height:clamp(240px,70vw,340px);gap:20px}
+  .archive-phones img{width:44%;height:100%;transform:none!important;object-fit:contain}
+  .archive-meta h3{font-size:24px;line-height:1.35}
+  .archive-meta>div{flex-wrap:wrap;justify-content:flex-start;font-size:13px;gap:5px 18px;line-height:1.7}
+  .archive-meta .archive-year>span{font-size:12px}
+  .archive-role{text-align:left}
+  .archive-overlay{position:static;transform:none;opacity:1;visibility:visible;background:transparent;color:var(--muted);padding:0 16px 18px;transition:none}
+  .archive-category,.archive-summary,.archive-overlay-footer>span{display:none}
+  .archive-overlay-footer{border:0;padding:0;margin:0;display:block}
+  .archive-overlay-footer p{font-size:13px;line-height:1.8;color:#51584b;max-width:none}
+  .section-label{font-size:11px;letter-spacing:.5px}
+  .section-heading h2{font-size:32px}
+  .about-profile{grid-template-columns:100px minmax(0,1fr);gap:0 20px}
+  .portrait{width:100px;height:132px}
+  .about-profile h3 span,.about-profile>p{font-size:12px}
+  .profile-education{grid-column:1/-1;margin-top:24px;padding-top:18px}
+  .profile-education>span{font-size:11px}
+  .profile-education strong{font-size:15px}
+  .profile-education p{font-size:13px}
+  .about-story>p:not(.about-lead),.strength-list p{font-size:16px;line-height:1.9}
+  .strength-list article>span{font-size:11px}
+  .strength-list h3{font-size:19px}
+  .skills>span{font-size:11px}
+  .skills p{font-size:14px}
+  .experience summary{font-size:16px;min-height:48px}
+  .experience li{grid-template-columns:60px minmax(0,1fr);font-size:14px;gap:8px 14px}
+  .experience li>strong{grid-column:2;font-size:13px}
+  .experience li>span,.experience li>strong{word-break:keep-all;overflow-wrap:break-word}
+  .experience time{font-size:12px}
+  .experience li.training-row{grid-template-columns:1fr}
+  .experience li.training-row strong,.training-row p{grid-column:1;font-size:14px}
+  .source-note{font-size:12px}
+  .contact-top{font-size:10px;flex-wrap:wrap;gap:12px}
+  .contact-top .section-label{font-size:11px}
+  .contact>.shell>p{font-size:16px;line-height:1.85}
+  .contact-email{font-size:clamp(17px,4.7vw,27px);min-height:48px;gap:8px;letter-spacing:-.6px}
+  .contact-email>span{font-size:24px}
+  .contact-bottom{font-size:13px;gap:12px}
+  .contact-bottom>a{display:inline-flex;align-items:center;min-height:44px;align-self:start;padding:8px 0}
+  .contact-missing{display:block;font-size:12px;margin-left:0;margin-top:4px}
+  .site-footer{font-size:11px;align-items:center;padding:15px 0}
+  .site-footer>a{display:inline-flex;align-items:center;min-height:44px}
+  .case-breadcrumb{align-items:center;gap:12px;margin-top:18px}
+  .case-breadcrumb>a{display:inline-flex;align-items:center;min-height:44px;font-size:13px}
+  .case-breadcrumb>span{font-size:10px}
+  .case-category{font-size:12px}
+  .case-summary{font-size:16px;line-height:1.9}
+  .case-meta{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .case-meta dd{font-size:13px;overflow-wrap:anywhere}
+  .case-meta dt{font-size:11px}
+  .case-cover{padding:20px 16px}
+  .case-cover>img{width:100%;height:auto;max-height:none;object-fit:contain}
+  .case-cover .screen-pair{height:clamp(270px,75vw,420px);gap:20px}
+  .case-cover .screen-pair img{width:44%;max-width:none;transform:none;object-fit:contain}
+  .case-nav{padding:12px 0;gap:4px 14px}
+  .case-section{scroll-margin-top:90px}
+  .case-content p{font-size:16px;line-height:1.95}
+  .case-content p.evidence-note{font-size:13px}
+  .approach-list h3{font-size:19px;line-height:1.5}
+  .approach-list>li>span{font-size:12px}
+  .role-line{font-size:13px}
+  .phone-gallery{grid-template-columns:1fr;gap:30px}
+  .phone-gallery .case-figure{width:100%;max-width:300px;justify-self:center}
+  .phone-gallery .case-figure:last-child{grid-column:auto;max-width:300px}
+  .image-expand img{object-fit:contain}
+  .expand-label{position:static;display:block;text-align:right;font-size:12px;padding:8px 11px;border:0;border-top:1px solid var(--line);opacity:1}
+  .case-next>div>span{font-size:11px}
+  .case-next h2 a{display:inline-block;min-height:44px}
+  .case-next .text-link{font-size:13px;min-height:44px;align-items:center}
+  .case-contact p{font-size:11px}
+  .case-contact a{display:inline-flex;align-items:center;min-height:44px;font-size:clamp(17px,4.8vw,25px);overflow-wrap:anywhere}
+  .dialog-bar{gap:12px;padding:10px 12px}
+  .dialog-bar p{font-size:13px;overflow-wrap:anywhere}
+  .dialog-image{padding:12px}
+}
+@media(max-width:360px){
+  :root{--gutter:16px}
+  .nav-inner{gap:8px}
+  .nav-inner nav{gap:4px}
+  .archive-hero h1{font-size:42px}
+  .archive-eyebrow{font-size:9px}
+  .archive-meta .archive-year>span{font-size:12px}
+  .archive-touch-hint{font-size:11px}
+  .about-profile{gap:0 16px}
+  .profile-education strong{font-size:15px}
+  .experience li{grid-template-columns:52px minmax(0,1fr)}
+}
